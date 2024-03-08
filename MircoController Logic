@@ -1,6 +1,6 @@
 
 ##Flight Computer Logic, 2022, Project Nspo##
-##Using Aurdino Microcontroller##
+##Using Aurdino Microcontroller 3.2##
 
 ##What's important to note about the Aurdino software are the mechanisms of the Setup and Loop functions## 
 ##With my computer, Setup only runs once, while the Loop function continues endlessly until termination##

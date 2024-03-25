@@ -11,10 +11,9 @@ internship, I am doing my best to "fill in the gaps" and gather my files from wh
 
 # What is this specific project? 
 
+This is my first model rocket. It is an L2 J-motor rocket I made over the span of a year's long internship at the California Coast Gaurd in Long Beach/Hollywood. I briefly worked with a team during the initial design process, but mostly assumed the project independently. I created the code, PCB Boards, Body, and Final Assembly. 
 
-This is my first model rocket. It is an L2 J-motor rocket that I constructed, launched, programmed, and engineered over the span of a little over a year as part of an internship I had at the Hollywood Coast Gaurd, in Hollywood, California. This overview will provide a simplified overview of the project, engineering process, and as much code as I can retrieve for the various components of the flight computer here.
 
 # What will this repository show me? 
 
-Electronic components, schematics, CAD model(s), and other information I deem useful to presenting the project (timelines, sketches, etc.) 
-
+Whatever I can recover from my personal computer. Some code, schematics, CAD, etc. The project was primarily worked over another computer provided to me over the term of my internship. (This was highly crucial, because the various programs I used, for CAD, for instance, Cadence Allegro, etc, are VERY eexpensive for personal use!) This means that this project may be in fragments, but hopefully can relay some interesting information about the project. 

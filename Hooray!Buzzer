@@ -1,0 +1,48 @@
+
+#This Arduino code is designed to trigger a sound playback when a model rocket reaches its apogee,
+the highest point in its flight trajectory. The code continuously reads altitude data from an altitude
+sensor connected to an analog pin. Once the altitude exceeds a predefined threshold value (`apogeeThreshold`), 
+indicating that the rocket has reached apogee, it triggers the playback of a sound through a buzzer connected 
+to a specified pin (`buzzerPin`). In this case, the sound played is "YIPEE!". This code provides a 
+simple mechanism to celebrate the rocket reaching its peak altitude during flight. :>
+
+
+// Define constants
+const int altimeterPin = A0; // Analog pin for reading altitude sensor
+const int buzzerPin = 9;     // Pin for buzzer
+const int apogeeThreshold = 500; // Adjust this value based on your altitude sensor and expected altitude
+
+// Variable to store altitude
+int altitude;
+
+void setup() {
+  // Initialize serial communication
+  Serial.begin(9600);
+  // Initialize buzzer pin
+  pinMode(buzzerPin, OUTPUT);
+}
+
+void loop() {
+  // Read altitude from altimeter
+  altitude = analogRead(altimeterPin);
+  
+  // Check if altitude is above apogee threshold
+  if (altitude >= apogeeThreshold) {
+    // Play sound when apogee is detected
+    playSound();
+  }
+  
+  // Print altitude for debugging
+  Serial.print("Altitude: ");
+  Serial.println(altitude);
+  
+  // Delay to control loop frequency
+  delay(1000); // Adjust as needed
+}
+
+void playSound() {
+  // Play sound with buzzer
+  tone(buzzerPin, 1000); // Adjust frequency as needed
+  delay(1000); // Adjust duration as needed
+  noTone(buzzerPin);
+}

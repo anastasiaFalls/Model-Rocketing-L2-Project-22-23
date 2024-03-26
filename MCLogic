@@ -2,8 +2,44 @@
 ##Flight Computer Logic, 2022, Project Nspo##
 ##Using Aurdino Microcontroller 3.2##
 
-##What's important to note about the Aurdino software are the mechanisms of the Setup and Loop functions## 
-##With my computer, Setup only runs once, while the Loop function continues endlessly until termination##
+##This code is for a flight data recorder system Here's what it does:
+
+1. **Global Constants and Variables**:
+   - Defines various constants and global variables, 
+including baud rate for serial communication, delay values, pin assignments, 
+and objects for different peripherals such as GPS, gyro, barometer, SD card, buzzer, and LoRa.
+
+2. **Setup Function (`setup()`)**:
+   - Initializes serial communication.
+   - Initializes peripherals such as GPS, gyro, barometer, SD card, buzzer, and LoRa.
+   - Makes initialization sounds with the buzzer.
+   - Sends a message indicating readiness to the LoRa module.
+
+3. **Init Functions**:
+   - Individual initialization functions for each peripheral, 
+including GPS, gyro, barometer, buzzer, SD card, and LoRa.
+
+4. **Execution Functions**:
+   - Functions related to the execution of the flight recorder system, 
+including setting LED status, writing flight data to the SD card, obtaining 
+GPS data, gyro data, barometer data, and performing actions when the flight 
+duration exceeds a certain limit.
+
+5. **Loop Function (`loop()`)**:
+   - Continuously reads data from the GPS module and processes it.
+   - Writes flight data to the SD card.
+   - Checks if the flight duration has exceeded a predefined
+limit and takes appropriate actions, such as closing the file,
+sending a rescue message via LoRa, and making rescue beeps with the buzzer.
+
+6. **Stop Flight and Stop Functions**:
+   - Functions to handle emergency situations or when the flight needs to be stopped abruptly.
+
+7. **Buzzer Functions**:
+   - Functions to generate different types of sounds with the buzzer, such as rescue beeps and initialization beeps.
+
+Overall, this code orchestrates the operation of various sensors and communication modules to record flight data, 
+handle emergencies, and communicate with ground stations.
 
 
 #include <SD.h>

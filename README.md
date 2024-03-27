@@ -17,4 +17,15 @@ This is my first model rocket. It is an L2 J-motor rocket I made over the span o
 # What will this repository show me? 
 
 Whatever I can recover from my personal computer. Some code, schematics, CAD, etc. The project was primarily worked over another computer provided to me over the term of my internship. (This was highly crucial, because the various programs I used, for CAD, for instance, Cadence Allegro, etc, are VERY eexpensive for personal use!) This means that this project may be in fragments, but hopefully can relay some interesting information about the project. 
-<img src="https://t.bkit.co/w_66046a05bf6c9.gif" />
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8X4N8MRVX7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8X4N8MRVX7');
+</script>
